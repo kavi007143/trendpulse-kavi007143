@@ -2,8 +2,7 @@ import glob
 import os
 import pandas as pd
 
-# Task 1 saves the file as data/trends_YYYYMMDD.json, so the date changes.
-# I use glob to find all such files and pick the latest one.
+
 json_files = sorted(glob.glob("data/trends_*.json"))
 if not json_files:
     print("No JSON file found in data/ folder. Run task1 first.")
